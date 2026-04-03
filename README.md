@@ -20,16 +20,26 @@ Zero profitable trades were executed across the entire monitoring period.
 
 ## Data files
 
-| File | Description |
-|------|-------------|
-| `daily_summary.json` | Per-day totals: markets tracked, measurements, liquid vs illiquid counts |
-| `spread_distribution.json` | Aggregate spread bucket counts |
-| `market_stats.json` | Per-market stats: measurement count, min spread, first/last seen, liquid periods |
-| `hourly_patterns.json` | Measurements and liquid windows by hour of day (UTC) |
-| `overview.json` | Top-level summary stats |
-| `correlations.json` | Depth/spread correlation data |
+| File | Description | Rows |
+|------|-------------|------|
+| `liquidity_metrics.csv.gz` | **Full raw dataset** (gzipped CSV) | 3,302,510 |
+| `daily_summary.json` | Per-day totals: markets tracked, measurements, liquid vs illiquid counts | 69 |
+| `spread_distribution.json` | Aggregate spread bucket counts | 3 |
+| `market_stats.json` | Per-market stats: measurement count, min spread, first/last seen, liquid periods | 353 |
+| `hourly_patterns.json` | Measurements and liquid windows by hour of day (UTC) | 24 |
+| `overview.json` | Top-level summary stats | 1 |
+| `correlations.json` | Depth/spread correlation data | 1 |
 
 ## Schema
+
+### liquidity_metrics.csv.gz (raw data)
+```csv
+market_id,timestamp,bid_depth,ask_depth,order_book_depth,mid_price,spread_bps
+0x43ec785...,2026-01-25T23:50:06.260875+00:00,15694.4876,12935.1654,28629.653,0.8,10000
+```
+`market_id` is the Polymarket condition ID. `bid_depth`/`ask_depth` in USDC. `mid_price` is 0 to 1. `spread_bps` in basis points (10000 = 100%).
+
+Decompress: `gunzip liquidity_metrics.csv.gz`
 
 ### daily_summary.json
 ```json
