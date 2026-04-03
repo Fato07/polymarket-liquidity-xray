@@ -1,0 +1,6 @@
+[{"id":1,"category_a":"crypto","category_b":"crypto","correlation":0.849999999999999977,"sample_size":0,"confidence":1.0,"source":"PRESET","updated_at":"2026-01-25 23:48:59"},
+{"id":2,"category_a":"election","category_b":"election","correlation":0.699999999999999955,"sample_size":0,"confidence":1.0,"source":"PRESET","updated_at":"2026-01-25 23:48:59"},
+{"id":3,"category_a":"sports","category_b":"sports","correlation":0.200000000000000011,"sample_size":0,"confidence":1.0,"source":"PRESET","updated_at":"2026-01-25 23:48:59"},
+{"id":4,"category_a":"crypto","category_b":"election","correlation":0.100000000000000005,"sample_size":0,"confidence":1.0,"source":"PRESET","updated_at":"2026-01-25 23:48:59"},
+{"id":5,"category_a":"crypto","category_b":"sports","correlation":0.0500000000000000027,"sample_size":0,"confidence":1.0,"source":"PRESET","updated_at":"2026-01-25 23:48:59"},
+{"id":6,"category_a":"election","category_b":"sports","correlation":0.0500000000000000027,"sample_size":0,"confidence":1.0,"source":"PRESET","updated_at":"2026-01-25 23:48:59"}]

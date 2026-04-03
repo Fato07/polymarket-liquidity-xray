@@ -1,0 +1,15 @@
+{
+  "total_measurements": 3302510,
+  "unique_markets": 353,
+  "date_range": {
+    "start": "2026-01-25 23:55:05",
+    "end": "2026-04-03 17:21:16"
+  },
+  "spread_summary": {
+    "illiquid_100pct": 3284298,
+    "sub_100pct": 18041,
+    "sub_50pct": 131,
+    "illiquid_pct": 99.45
+  },
+  "exported_at": "2026-04-03T17:23:48.482338"
+}
